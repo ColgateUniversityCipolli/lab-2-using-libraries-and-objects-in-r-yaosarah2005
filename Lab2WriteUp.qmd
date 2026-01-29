@@ -78,8 +78,17 @@ knitr::knit_hooks$set(chunk = function(x, options) {
 ## Part a
 Install the `esquisse` package for `R`. Report the code below, ensuring to set the `eval` option to `false`, using "\#| eval: false", so that we don't install the package every time you compile your Quarto document.
 
+```{r}
+#| eval: false
+install.packages("esquisse")
+```
+
 ## Part b
 Load the `esquisse` package for `R`. Report the code below. It does not matter whether you set "\#| eval: false" because loading the package does not add a lot of time. Note you will not evaluate any code that uses the `esquisse` package, so there is no need to load it as you compile your Quarto document.
+
+```{r}
+library("esquisse")
+```
 
 ## Part c
 How can you ask for help about the  `esquisse` package for `R`? Report the code below, ensuring to set the `eval` option to `false`, using "\#| eval: false", so that the help document isn't loaded every time you compile your Quarto document.
