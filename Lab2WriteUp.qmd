@@ -111,6 +111,8 @@ vignette(package = "esquisse")
 
 ## Part e
 Add the BibTeX citation for `esquisse` package for `R` to your `.bib` file and cite it in a sentence describing what the package does below. Note you can reference a citation named `esquisse` using "[@\hspace{-0em}esquisse]".
+
+I used the `esquisse` [@esquisse] package
 <!-- Note the \hspace{-0em} above is for printing 
 the command instead of actually citing. -->
 
@@ -120,6 +122,8 @@ Run `esquisser()` in your console -- not in a chunk of `R` code in your Quarto d
 i. Select `palmerpenguins` from the "Select an environment in which to search:" dropdown. This should automatically select `penguins` in the "Select a data.frame:" dropdown. Click "Import Data".
 ii. Drag `body_mass_g` to the X box and `species` to the fill box. 
 iii. Describe what you see in words. What can you conclude about Adelie, Chinstrap, and Gentoo penguins based on the resulting plot? 
+
+Adelie has relative low body mass on average, but relative high count. Chinstrp has relative similar body mass to Adelie, but has low count. Gentoo has relative high body mass on average and relative low count.
 
 # Objects and Vectors
 Create the following vectors in `R`. In some cases, you may be able to use `seq()` or `rep()` while in others you cannot. Use these functions when possible, otherwise manually create the vector and explain why that was necessary.
