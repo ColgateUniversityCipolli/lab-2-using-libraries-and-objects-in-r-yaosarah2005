@@ -93,8 +93,21 @@ library("esquisse")
 ## Part c
 How can you ask for help about the  `esquisse` package for `R`? Report the code below, ensuring to set the `eval` option to `false`, using "\#| eval: false", so that the help document isn't loaded every time you compile your Quarto document.
 
+```{r}
+#| eval: false
+help(package = "esquisse")
+```
+
 ## Part d
 Is a demo or vignette available for the  `esquisse` package for `R`? Report the code below, ensuring to set the `eval` option to `false`, using "\#| eval: false", so that the you don't get errors when you compile your Quarto document.
+
+There is no demo available, but vignettes are available
+
+```{r}
+#| eval: false
+demo(package = "esquisse")
+vignette(package = "esquisse")
+```
 
 ## Part e
 Add the BibTeX citation for `esquisse` package for `R` to your `.bib` file and cite it in a sentence describing what the package does below. Note you can reference a citation named `esquisse` using "[@\hspace{-0em}esquisse]".
