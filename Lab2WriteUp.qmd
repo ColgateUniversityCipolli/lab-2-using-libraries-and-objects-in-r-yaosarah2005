@@ -78,6 +78,7 @@ knitr::knit_hooks$set(chunk = function(x, options) {
 ## Part a
 Install the `esquisse` package for `R`. Report the code below, ensuring to set the `eval` option to `false`, using "\#| eval: false", so that we don't install the package every time you compile your Quarto document.
 
+**Solution**
 ```{r}
 #| eval: false
 install.packages("esquisse")
@@ -86,6 +87,7 @@ install.packages("esquisse")
 ## Part b
 Load the `esquisse` package for `R`. Report the code below. It does not matter whether you set "\#| eval: false" because loading the package does not add a lot of time. Note you will not evaluate any code that uses the `esquisse` package, so there is no need to load it as you compile your Quarto document.
 
+**Solution**
 ```{r}
 library("esquisse")
 ```
@@ -93,6 +95,7 @@ library("esquisse")
 ## Part c
 How can you ask for help about the  `esquisse` package for `R`? Report the code below, ensuring to set the `eval` option to `false`, using "\#| eval: false", so that the help document isn't loaded every time you compile your Quarto document.
 
+**Solution**
 ```{r}
 #| eval: false
 help(package = "esquisse")
@@ -101,18 +104,21 @@ help(package = "esquisse")
 ## Part d
 Is a demo or vignette available for the  `esquisse` package for `R`? Report the code below, ensuring to set the `eval` option to `false`, using "\#| eval: false", so that the you don't get errors when you compile your Quarto document.
 
-There is no demo available, but vignettes are available
-
+**Solution**
 ```{r}
 #| eval: false
 demo(package = "esquisse")
 vignette(package = "esquisse")
 ```
 
+There is no demo available, but vignettes are available
+
 ## Part e
 Add the BibTeX citation for `esquisse` package for `R` to your `.bib` file and cite it in a sentence describing what the package does below. Note you can reference a citation named `esquisse` using "[@\hspace{-0em}esquisse]".
 
-I used the `esquisse` [@esquisse] package to draw the graph
+**Solution**
+
+I used the `esquisse` [@esquisse] package to visualize data.
 <!-- Note the \hspace{-0em} above is for printing 
 the command instead of actually citing. -->
 
@@ -123,7 +129,9 @@ i. Select `palmerpenguins` from the "Select an environment in which to search:" 
 ii. Drag `body_mass_g` to the X box and `species` to the fill box. 
 iii. Describe what you see in words. What can you conclude about Adelie, Chinstrap, and Gentoo penguins based on the resulting plot? 
 
-Adelie has relative low body mass on average, but relative high count. Chinstrp has relative similar body mass to Adelie, but has low count. Gentoo has relative high body mass on average and relative low count.
+**Solution**
+
+Adelie has low body mass on average, but relatively high count. Chinstrp has similar body mass to Adelie, but has lower counts. Gentoo has relative high body mass on average and relative low count.
 
 # Objects and Vectors
 Create the following vectors in `R`. In some cases, you may be able to use `seq()` or `rep()` while in others you cannot. Use these functions when possible, otherwise manually create the vector and explain why that was necessary.
@@ -178,6 +186,8 @@ $$F_n = F_{n-1} + F_{n-2}$$
 where $F_0=0$ and $F_1=1$. 
 
 Create a vector of the first 10 Fibonacci numbers.
+
+**Solution**
 ```{r}
 #| size: "scriptsize"
 #| code-fold: FALSE
@@ -189,6 +199,8 @@ Triangular Numbers are the cumulative sums of natural numbers:
 $$F_n = \frac{n(n+1)}{2}.$$
 
 Create a vector of the first 10 Triangular Numbers. 
+
+**Solution**
 ```{r}
 #| size: "scriptsize"
 #| code-fold: FALSE
@@ -201,6 +213,8 @@ Suppose I were designing a repeated meausres experiment with three treatment con
 Consider setting up data entry for this experiment.
 
 i. Create a vector containing each `ID` repeated three times, once for each treatment.
+
+**Solution**
 ```{r}
 #| size: "scriptsize"
 #| code-fold: FALSE
@@ -208,6 +222,8 @@ i. Create a vector containing each `ID` repeated three times, once for each trea
 ```
 
 ii. Create a vector containing each `Treatment` repeated for each participant ID.
+
+**Solution**
 ```{r}
 #| size: "scriptsize"
 #| code-fold: FALSE
@@ -216,6 +232,8 @@ ii. Create a vector containing each `Treatment` repeated for each participant ID
 
 ## Part d
 Create a vector containing the `character` "MATH" and the `numeric` 240. What is the resulting class? Explain why in a sentence.
+
+**Solution**
 ```{r}
 #| size: "scriptsize"
 #| code-fold: FALSE
