@@ -112,7 +112,7 @@ vignette(package = "esquisse")
 ## Part e
 Add the BibTeX citation for `esquisse` package for `R` to your `.bib` file and cite it in a sentence describing what the package does below. Note you can reference a citation named `esquisse` using "[@\hspace{-0em}esquisse]".
 
-I used the `esquisse` [@esquisse] package
+I used the `esquisse` [@esquisse] package to draw the graph
 <!-- Note the \hspace{-0em} above is for printing 
 the command instead of actually citing. -->
 
@@ -178,6 +178,11 @@ $$F_n = F_{n-1} + F_{n-2}$$
 where $F_0=0$ and $F_1=1$. 
 
 Create a vector of the first 10 Fibonacci numbers.
+```{r}
+#| size: "scriptsize"
+#| code-fold: FALSE
+(Fibonacci <- c(0, 1, 1, 2, 3, 5, 8, 13, 21, 34))
+```
 
 ## Part b
 Triangular Numbers are the cumulative sums of natural numbers:
